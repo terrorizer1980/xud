@@ -11,6 +11,7 @@ cache:
     - "test/simulation/go" # lnd, btcd, and dependencies
 
 before_install:
+  - npm install grpc@1.24.1 --build-from-source
   - eval "$(GIMME_GO_VERSION=1.12 gimme)"
 
 script:
